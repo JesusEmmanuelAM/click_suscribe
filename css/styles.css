@@ -1,0 +1,119 @@
+:root {
+  --cs-green: #68953b;
+  --cs-yellow: #db9639;
+  --cs-blue1: #12549f;
+  --cs-blue2: #4a7bab;
+  --cs-red: #b71c1c;
+}
+
+.cs_green {
+background: var(--cs-green) !important;
+}
+.cs_yellow {
+background: var(--cs-yellow) !important;
+}
+.cs_blue1 {
+background: var(--cs-blue1) !important;
+}
+.cs_blue2 {
+background: var(--cs-blue2) !important;
+}
+.cs_red {
+background: var(--cs-red) !important;
+}
+
+
+
+.dropdown-toggle::after {
+color: white !important;
+}
+
+
+.border_tb {
+border-bottom: 1px solid #c3c3c3;
+border-top: 1px solid #c3c3c3;
+}
+
+.font-small{
+font-size: small !important;
+}
+
+.shop_item {
+border: 2px solid #acabab;
+background: #e9e8e8;
+border-radius: 2px;
+}
+
+
+.navbar-light .navbar-toggler-icon {
+background-image: url("./images/menu.png") !important;
+}
+
+.navbar-toggler {
+border: 1px solid #737373a1 !important;
+}
+
+.input {
+padding-left: 10px !important;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.float-r {
+  float: right;
+}
+
+
+.navbar-toggler:focus {
+text-decoration: none;
+outline: 0;
+box-shadow: none !important;
+}
+
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+  outline:0px !important;
+  -webkit-appearance:none !important;
+  box-shadow: none !important;
+}
+
+
+.form-select {
+  width: auto !important;
+}
+
+.title-cs {
+  font-weight: 200 !important;
+}
+
+.mt-10 {
+  margin-top: 15%;
+}
+
+.bor-bot {
+  border-bottom: 2px solid #c3c3c3;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .input {
+    padding-left: 10px !important;
+  }
+  .mt-10 {
+    margin-top: 0%;
+  }
+}

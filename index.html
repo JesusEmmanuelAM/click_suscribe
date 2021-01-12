@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="./css/animate.min.css" />
+
+  <!--  My Styles   -->
+  <link type="text/css" rel="stylesheet" href="./css/styles.css" media="screen,projection" />
+
+  <!--  Font Awesome   -->
+  <script src="./js/fontAwesome.min.js" crossorigin="anonymous"></script>
+
+
+  <link rel="icon" type="image/png" href="./images/Default.png" />
+  <title>Click Suscribe | CompuSoluciones</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-white bg-white pt-0 pb-4">
+    <div class="container-fluid p-0">
+      <a class="navbar-brand" href="#">
+        <img src="./images/clicksuscribe.svg" width="100%" height="auto" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler m-5 mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./images/menu.png" alt="" width="20" height="20">
+      </button>
+
+      <div class="collapse navbar-collapse flex-column align-items-end cs_blue1" id="navbarCollapse">
+
+        <!-- navbar1 -->
+        <ul class="navbar-nav mt-0">
+          <li class="nav-item active cs_blue1 p-3">
+            <a class="nav-link text-light" href="#"><img src="./images/bag.png" width="20" height="20">Ver todos los
+              productos</a>
+          </li>
+          <li class="nav-item dropdown cs_yellow p-3">
+            <button class="btn dropdown-toggle text-light" type="button" id="menu_cliente" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cliente
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="menu_cliente">
+              <li><a class="dropdown-item" href="#">Opción #1</a></li>
+              <li><a class="dropdown-item" href="#">Opción #2</a></li>
+              <li><a class="dropdown-item" href="#">Opción #3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item cs_green p-3">
+            <a class="nav-link text-light p-2" href="#"><img src="./images/siclick.ico" width="20" height="20">
+              siclick</a>
+          </li>
+          <li class="nav-item cs_red p-3">
+            <a class="nav-link text-light" href="#"><img src="" alt=""> Soporte</a>
+          </li>
+          <li class="nav-item cs_blue2  p-3">
+            <a class="nav-link text-light" href="#"><img src="./images/market.png" width="20" height="20" alt=""><span
+                class="px-2">0</span></a>
+          </li>
+          <li class="nav-item dropdown cs_red p-3">
+            <button class="btn dropdown-toggle text-light" type="button" id="menu_user" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="./images/user.png" alt="" width="20" height="20">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="menu_user">
+              <li><a class="dropdown-item" href="#">Opción #1</a></li>
+              <li><a class="dropdown-item" href="#">Opción #2</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- navbar2 -->
+        <div class="col-12 p-2 cs_blue2 input">
+          <div class="col-12">
+            <div class="navbar-nav mb-lg-0 ">
+              <input class="form-control " id="search_item" type="search" placeholder="Busca un producto"
+                aria-label="Search">
+              <button class="btn cs_blue1 text-light px-5" onclick="search_product()" type="button">Buscar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container " id='info'></div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h1 class="text-secondary p-3 title-cs">Suscripciones</h1>
+
+      </div>
+
+
+      <div class="col-12 col-md-6">
+        <i class="offset-md-6 offset-lg-7 ">Filtrar por:</i>
+        <select class="form-select col-12 col-md-4 col-lg-3 offset-md-6 offset-lg-7" id="select_fabricante"
+          onChange="get_products(this.value)" aria-label="Default select example">
+          <option selected>Todos los fabricantes</option>
+        </select>
+      </div>
+
+      <span class="text-secondary mb-3 bor-bot">Precios más IVA.</span>
+    </div>
+
+
+    <div id="row_items" class="">
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- My Javascript -->
+  <script type="text/javascript" src="./js/javascript.js"></script>
+
+</body>
+
+</html>
